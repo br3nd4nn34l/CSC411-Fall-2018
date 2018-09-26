@@ -155,7 +155,6 @@ def n_log_n(n):
     """Returns n * log(n)"""
     if n == 0:
         return 0
-
     return n * math.log(n)
 
 
@@ -233,18 +232,14 @@ if __name__ == '__main__':
                               valid_data, valid_labels)
     output_model_diagram(best_model, vectorizer.get_feature_names())
 
-    info_gains = dict(zip(
-        vectorizer.get_feature_names(),
-        mutual_info_classif(train_data, train_labels, discrete_features=True)
-    ))
+    print("\n")
 
     # Compute information gain on several keywords
-    for word in ["trump", "donald", "hillary", "clinton", "korea", "america"]:
+    for word in ["donald", "hillary", "clinton", "korea", "america", "putin"]:
         info_gain = compute_information_gain(
             train_data,
             train_labels,
             vectorizer.vocabulary_,
             word
         )
-
         print(f"Information Gain in Label by splitting on {word}: {info_gain}")
