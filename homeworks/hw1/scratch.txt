@@ -1,0 +1,10 @@
+Model(depth=2, criteria=entropy): score = 0.6346938775510204
+Model(depth=3, criteria=entropy): score = 0.6877551020408164
+Model(depth=4, criteria=entropy): score = 0.7061224489795919
+Model(depth=5, criteria=entropy): score = 0.689795918367347
+Model(depth=6, criteria=entropy): score = 0.689795918367347
+Model(depth=2, criteria=gini): score = 0.7040816326530612
+Model(depth=3, criteria=gini): score = 0.7040816326530612
+Model(depth=4, criteria=gini): score = 0.7061224489795919
+Model(depth=5, criteria=gini): score = 0.689795918367347
+Model(depth=6, criteria=gini): score = 0.7
